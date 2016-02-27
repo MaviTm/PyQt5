@@ -144,6 +144,18 @@ class myDb:
         return r
 
     @classmethod
+    def insertID(cls):
+        return cls.__insertID
+
+    @classmethod
+    def numRows(cls):
+        return cls.__numRows
+
+    @classmethod
+    def affRows(cls):
+        return cls.__affRows
+
+    @classmethod
     def infoGet(cls, index):
         try:
             return cls.__tblInfo[index]
