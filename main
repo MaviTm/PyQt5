@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+from PyQt5 import QtWidgets
+import sys
+
+uygulama = QtWidgets.QApplication(sys.argv)
+
+pencere = QtWidgets.QWidget()
+pencere.show()
+
+uygulama.exec_()
