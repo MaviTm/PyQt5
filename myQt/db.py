@@ -22,6 +22,18 @@ class myDb:
 
     @classmethod
     def myDbConnect(cls, o=False):
+        """
+        mdb = db.myDb
+        mdb.setConf({
+            'dbType':'QMYSQL',
+            'dbHost':'localhost',
+            'dbName':'caspalYem',
+            'dbUser':'root',
+            'dbPass':''
+        })
+
+        mdb.myDbConnect(True)
+        """
         if(cls.__dbase == None):
             cls.__dbase = QSqlDatabase.addDatabase(cls.__conf['dbType'])
             cls.__dbase.setHostName(cls.__conf['dbHost'])

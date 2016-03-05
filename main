@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-from PyQt5 import QtWidgets
 import sys
+from myQt import pencere
 
-uygulama = QtWidgets.QApplication(sys.argv)
+pencerem = pencere.myWin()
+pencerem.winResize(640, 480).winMove(250, 250).winTitle("Zincirli form")
 
-pencere = QtWidgets.QWidget()
-pencere.show()
+####
+# COMING SOON
+###
 
-uygulama.exec_()
+pencerem.winShow()
