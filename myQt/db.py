@@ -1,4 +1,5 @@
 #sudo apt-get install libqt5sql5-mysql
+#sudo apt-get install python3-pyqt5.qtsql
 from PyQt5.QtSql import * #QSqlDatabase, QSqlQuery
 class myDb:
     __conf = {}
